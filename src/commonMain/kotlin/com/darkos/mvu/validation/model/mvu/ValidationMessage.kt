@@ -9,5 +9,5 @@ sealed class ValidationMessage : Message() {
     object ValidationClick: ValidationMessage()
     abstract class FieldValueChanged(
         val newValue: String
-    ) : Message()
+    ) : ValidationMessage()
 }
