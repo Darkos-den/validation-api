@@ -7,7 +7,8 @@ sealed class ValidationMessage : Message() {
     class Error(val wrongFields: List<Field>) : ValidationMessage()
     object Success : ValidationMessage()
     object ValidationClick: ValidationMessage()
-    abstract class FieldValueChanged(
+    class FieldValueChanged(
+        val fieldId: Long,
         val newValue: String
-    ) : ValidationMessage()
+    ) : Message()
 }
