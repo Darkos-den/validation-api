@@ -10,5 +10,5 @@ sealed class ValidationMessage : Message() {
     class FieldValueChanged(
         val fieldId: Long,
         val newValue: String
-    ) : Message()
+    ) : ValidationMessage()
 }
