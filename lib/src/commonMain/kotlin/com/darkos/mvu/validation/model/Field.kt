@@ -1,6 +1,6 @@
 package com.darkos.mvu.validation.model
 
-import com.darkos.mvu.models.MVUState
+import com.darkos.mvu.model.MVUState
 
 data class Field(
         val id: Long,
